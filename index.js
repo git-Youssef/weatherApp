@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
 
             navigatorLanguage = navigatorLanguage.slice(0, 2);
 
-            const api = `http://api.weatherapi.com/v1/current.json?q=${latitude},${longitude}&lang=${navigatorLanguage}&key=eb202d35273247bb911183753221708`;
+            const api = `https://api.weatherapi.com/v1/current.json?q=${latitude},${longitude}&lang=${navigatorLanguage}&key=eb202d35273247bb911183753221708`;
 
             try {
                 const response = await fetch(api);
